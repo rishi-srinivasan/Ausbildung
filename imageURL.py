@@ -14,7 +14,7 @@ import pandas as pd
 im = []
 alt = []
 url = 'https://www.ausbildung.de/berufe/anaesthesietechnischer-assistent/'
-df = pd.DataFrame(columns={'Title':'','Link':''})
+df = pd.DataFrame(columns={'Title':'','Link':''})               #Create the dataframe with the links and title
 
 #Method to get all images url in webpage and save it in a csv file
 def getimage(url,folder):    
@@ -39,6 +39,4 @@ def getimage(url,folder):
     
 #Call the getimage()
 getimage(url,'image_links')
-   
-#Create the dataframe with the links and title
 
